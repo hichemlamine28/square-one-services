@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services Square-one</title>
+  <style>
+    /* Styles CSS pour la mise en page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .content {
+      text-align: center;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 90%;
+      overflow-x: hidden; /* Empêcher le défilement horizontal */
+      white-space: nowrap; /* Empêche le retour à la ligne des éléments */
+      position: relative; /* Ajout de position relative pour l'élément parent */
+      margin-top: 50px; /* Ajout de marge pour le titre */
+    }
+    .service-item {
+      display: inline-block;
+      width: 200px;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      color: #333; /* Couleur du texte par défaut */
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animation de transition */
+      cursor: pointer; /* Curseur pointer au survol */
+      position: relative; /* Position relative pour les effets */
+      overflow: hidden; /* Masque le dépassement */
+    }
+    .service-item:hover {
+      transform: scale(1.1); /* Effet de zoom au survol */
+      background-color: #dabbe6; /* Couleur de fond au survol */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+    }
+    .service-item img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease-in-out; /* Animation de transition pour l'image */
+    }
+    .service-item h2 {
+      margin-bottom: 5px;
+      color: #333; /* Couleur du titre par défaut */
+    }
+    h1, h2 {
+      color: #d35400; /* Couleur des titres */
+      transition: color 0.3s ease-in-out; /* Animation de transition pour la couleur des titres */
+    }
+    h1:hover, h2:hover {
+      color: #9b59b6; /* Couleur des titres au survol */
+    }
+    p {
+        color: #9b59ff; /* Couleur des titres */
+        transition: color 0.3s ease-in-out; /* Animation de transition pour la couleur des titres */
+      }
+
+    /* Styles pour le titre */
+    h1 {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1; /* Pour être au-dessus du contenu */
+      background-color: #fff; /* Fond blanc pour le titre */
+      padding: 10px 20px; /* Espacement autour du titre */
+      border-radius: 5px; /* Coins arrondis */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    }
+
+    /* Ajout de la barre de défilement */
+    .services {
+      overflow-x: auto; /* Activer la barre de défilement horizontale */
+      margin-left: 20px; /* Ajout de la marge à gauche pour le défilement complet */
+      padding-bottom: 20px; /* Ajout de marge en bas pour éviter que le contenu soit coupé */
+      white-space: nowrap; /* Empêcher le retour à la ligne des éléments */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bienvenue chez Square-one</h1>
+    <div class="content" onmousemove="scrollWithMouse(event)">
+      <p>Découvrez nos solutions innovantes </p>
+      <div class="services"> <!-- Ajout de la classe services pour le conteneur des services -->
+
+
+        <!-- Devops -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="devops.png" alt="Devops">
+          <h2>DevOps</h2>
+        </div>
+
+        <!-- Devsecops -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="devsecops.png" alt="Devsecops">
+          <h2>DevSecOps</h2>
+        </div>
+
+        <!-- Coaching Devops -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="coachingdevops.png" alt="Coachingdevops">
+          <h2>Coaching DevOps</h2>
+        </div>
+
+
+        <!-- Coaching Agiles -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="coachingagile.png" alt="Coachingagile">
+          <h2>Coaching Agile</h2>
+        </div>
+
+
+        <!-- Linux -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="linux.png" alt="Linux">
+          <h2>Linux</h2>
+        </div>        
+
+        <!-- Debian -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="debian.png" alt="Debian">
+          <h2>Debian</h2>
+        </div>        
+
+
+        <!-- Redhat -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="redhat.png" alt="Redhat">
+          <h2>Redhat</h2>
+        </div>        
+
+        <!-- Windows -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="windows.png" alt="Windows">
+          <h2>Windows</h2>
+        </div>
+
+        <!-- GCP -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="gcp.png" alt="Gcp">
+          <h2>GCP</h2>
+        </div>
+
+
+
+        <!-- AWS -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="aws.png" alt="AWS">
+            <h2>AWS</h2>
+          </div>
+
+
+
+        <!-- Azure -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="azure.png" alt="Azure">
+            <h2>Azure</h2>
+          </div>
+
+
+
+        <!-- Nubo -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="nubo.png" alt="Nubo">
+            <h2>Nubo</h2>
+          </div>
+
+
+
+        <!-- OVH -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="ovh.png" alt="Ovh">
+            <h2>OVH</h2>
+          </div>
+
+
+
+        <!-- Alibabacloud -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="alibabacloud.png" alt="Alibabacloud">
+            <h2>Alibaba Cloud</h2>
+          </div>
+
+
+
+        <!-- DigitalOcean -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="digitalocean.png" alt="Digitalocean">
+            <h2>DigitalOcean</h2>
+          </div>
+
+      
+        <!-- Openstack -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="openstack.png" alt="Openstack">
+            <h2>Openstack</h2>
+          </div>
+
+
+        <!-- Virtualbox -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="virtualbox.png" alt="Virtualbox">
+            <h2>Virtualbox</h2>
+          </div>
+
+        <!-- Vmware -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="vmware.png" alt="Vmware">
+            <h2>Vmware</h2>
+          </div>
+
+        <!-- Terraform -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="terrafrom.png" alt="Terraform">
+          <h2>Terraform</h2>
+        </div>
+
+        
+        <!-- Vagrant -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="vagrant.png" alt="Vagrant">
+          <h2>Vagrant</h2>
+        </div>
+
+          
+
+        <!-- Ansible -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="ansible.png" alt="Ansible">
+            <h2>Ansible</h2>
+          </div>
+
+
+
+        <!-- Puppet -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="puppet.png" alt="Puppet">
+            <h2>Puppet</h2>
+          </div>
+
+
+
+        <!-- Chef -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+            <img src="chef.png" alt="Chef">
+            <h2>Chef</h2>
+          </div>
+
+
+        <!-- Selenium -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="selenium.png" alt="Selenium">
+          <h2>Selenium</h2>
+        </div>
+
+        <!-- Sonarqube -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="sonarqube.png" alt="Sonarqube">
+          <h2>Sonarqube</h2>
+        </div>
+
+
+        <!-- Selenium -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="cypress.png" alt="Cypress">
+          <h2>Cypress</h2>
+        </div>
+
+
+        <!-- Java -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="java.png" alt="Java">
+          <h2>Java</h2>
+        </div>
+
+
+        <!-- Python -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="python.png" alt="Python">
+          <h2>Python</h2>
+        </div>
+
+        
+        <!-- Go -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="go.png" alt="Go">
+          <h2>Go</h2>
+        </div>
+
+
+        <!-- Php -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="php.png" alt="Php">
+          <h2>Php</h2>
+        </div>
+
+
+        <!-- Git -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="git.png" alt="Git">
+          <h2>Git</h2>
+        </div>
+
+
+        <!-- Gitlab -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="gitlab.png" alt="Gitlab">
+          <h2>Gitlab</h2>
+        </div>
+
+
+        <!-- Gitlabci -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="gitlabci.png" alt="Gitlabci">
+          <h2>Gitlab-CI</h2>
+        </div>
+
+
+        <!-- Jenkins -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="jenkins.png" alt="Jenkins">
+          <h2>Jenkins</h2>
+        </div>
+
+        <!-- Bitbucket -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="bitbucket.png" alt="Bitbucket">
+          <h2>Bitbucket</h2>
+        </div>
+
+
+        <!-- Argocd -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="argocd.png" alt="Argocd">
+          <h2>Argocd</h2>
+        </div>
+
+        <!-- Circleci -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="circleci.png" alt="Circleci">
+          <h2>Circleci</h2>
+        </div>
+
+
+
+        <!-- Jira -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="jira.png" alt="Jira">
+          <h2>Jira</h2>
+        </div>
+
+        <!-- Confluence -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="confluence.png" alt="Confluence">
+          <h2>Confluence</h2>
+        </div>
+
+        <!-- Atlassian -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="atlassian.png" alt="Atlassian">
+          <h2>Atlassian</h2>
+        </div>
+
+        <!-- Grafana -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="grafana.png" alt="Grafana">
+          <h2>Grafana</h2>
+        </div>
+
+        <!-- Prometheus -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="prometheus.png" alt="Prometheus">
+          <h2>Prometheus</h2>
+        </div>
+
+        <!-- Loki -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="loki.png" alt="Loki">
+          <h2>Loki</h2>
+        </div>
+
+
+        <!-- ELK -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="elk.png" alt="Elk">
+          <h2>ELK</h2>
+        </div>
+
+        <!-- Nagios -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="nagios.png" alt="Nagios">
+          <h2>Nagios</h2>
+        </div>
+
+        <!-- Dynatrace -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="dynatrace.png" alt="Dynatrace">
+          <h2>Dynatrace</h2>
+        </div>
+
+        <!-- Owasp -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="owasp.png" alt="Owasp">
+          <h2>Owasp</h2>
+        </div>
+
+
+        <!-- Calico -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="calico.png" alt="Calico">
+          <h2>Calico</h2>
+        </div>        
+
+        <!-- Snort -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="snort.png" alt="Snort">
+          <h2>Snort</h2>
+        </div>
+
+        <!-- Postgresql -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="postgresql.png" alt="Postgresql">
+          <h2>Postgresql</h2>
+        </div>
+                
+
+        
+        <!-- Mongodb -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="mongodb.png" alt="Mongodb">
+          <h2>Mongodb</h2>
+        </div>                
+
+        
+        <!-- Mariadb -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="mariadb.png" alt="Mariadb">
+          <h2>Mariadb</h2>
+        </div>                
+
+                
+        <!-- Sql -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="sql.png" alt="Sql">
+          <h2>Sql</h2>
+        </div>
+                
+        <!-- Oracle -->
+        <div class="service-item" onclick="playSound('sound.mp3')">
+          <img src="oracle.png" alt="Oracle">
+          <h2>Oracle</h2>
+        </div>
+
+        
+        
+        
+                
+
+        
+        
+
+
+                
+    
+  
+          <!-- Ajoutez d'autres services ici -->
+
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // Fonction de défilement avec la souris
+    function scrollWithMouse(event) {
+      var container = document.querySelector('.services');
+      var contentWidth = container.scrollWidth;
+      var viewportWidth = container.clientWidth;
+      var mouseX = event.clientX - container.getBoundingClientRect().left;
+      var maxScroll = contentWidth - viewportWidth;
+      var scrollPos = container.scrollLeft + (mouseX - viewportWidth / 2) / 10; // Ralentir le défilement
+      container.scrollLeft = Math.max(0, Math.min(scrollPos, maxScroll));
+    }
+
+    // Fonction pour la lecture du son
+    function playSound(soundFile) {
+      var audio = new Audio(soundFile);
+      audio.play();
+    }
+  </script>
+
+
+</body>
+</html>
