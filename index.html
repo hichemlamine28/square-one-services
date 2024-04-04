@@ -66,7 +66,8 @@
       color: #9b59b6; /* Couleur des titres au survol */
     }
     p {
-        color: #9b59ff; /* Couleur des titres */
+        /* color: #9b59ff; /* Couleur des titres */
+        color: #47002ce8; 
         transition: color 0.3s ease-in-out; /* Animation de transition pour la couleur des titres */
       }
 
@@ -97,14 +98,16 @@
     <center><h1>Bienvenue chez <br> <img src="logo/square-one.png" alt="Squareone"> </h1></center>
    
     <div class="content" onmousemove="scrollWithMouse(event)">
-      <p>Découvrez nos solutions innovantes </p>
-      <div class="services"> <!-- Ajout de la classe services pour le conteneur des services -->
+      <!-- <p>Découvrez nos solutions innovantes </p> -->
 
-        <!-- Development -->
-        <div class="service-item" onclick="toggleTools(this)">
-          <img src="logo/development.png" alt="Development">
-          <h2>Web Development</h2>
-        </div>
+
+      <div class="service-item" onclick="window.location.href = 'index.html';">
+        <!-- <img src="logo/retour.png" alt="Retour"> -->
+        <p>Découvrez nos solutions</p>
+      </div>
+
+
+      <div class="services"> <!-- Ajout de la classe services pour le conteneur des services -->
 
         <!-- Devops -->
         <div class="service-item" onclick="toggleTools(this)">
@@ -113,463 +116,487 @@
         </div>
 
         <!-- Devsecops -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/devsecops.png" alt="Devsecops">
           <h2>DevSecOps</h2>
+        </div> -->
+
+        <!-- Cloud -->
+        <div class="service-item" onclick="toggleTools(this)">
+          <img src="logo/cloud.png" alt="Cloud">
+          <h2>Cloud</h2>
         </div>
 
-        <!-- Coaching Devops -->
         <div class="service-item" onclick="toggleTools(this)">
+          <img src="logo/cybersecurite.png" alt="Cybersecurity">
+          <h2>Cybersecurity</h2>
+        </div> 
+
+        <div class="service-item" onclick="toggleTools(this)">
+          <img src="logo/data.png" alt="Data">
+          <h2>Data</h2>
+        </div> 
+
+        <!-- Development -->
+        <!-- <div class="service-item" onclick="toggleTools(this)">
+          <img src="logo/development.png" alt="Development">
+          <h2>Web Development</h2>
+        </div> -->
+
+
+        <!-- Coaching Devops -->
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/coachingdevops.png" alt="Coachingdevops">
           <h2>Coaching DevOps</h2>
-        </div>
+        </div> -->
 
 
         <!-- Coaching Agiles -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/coachingagile.png" alt="Coachingagile">
           <h2>Coaching Agile</h2>
-        </div>
+        </div> -->
 
 
         <!-- Linux -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/linux.png" alt="Linux">
           <h2>Linux</h2>
-        </div>        
+        </div>         -->
 
         <!-- Debian -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/debian.png" alt="Debian">
           <h2>Debian</h2>
-        </div>        
+        </div>         -->
 
 
         <!-- Redhat -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/redhat.png" alt="Redhat">
           <h2>Redhat</h2>
-        </div>        
+        </div>         -->
 
         <!-- Windows -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/windows.png" alt="Windows">
           <h2>Windows</h2>
-        </div>
+        </div> -->
 
         <!-- GCP -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/gcp.png" alt="Gcp">
           <h2>GCP</h2>
-        </div>
+        </div> -->
 
 
 
         <!-- AWS -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/aws.png" alt="AWS">
             <h2>AWS</h2>
-          </div>
+          </div> -->
 
 
 
         <!-- Azure -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/azure.png" alt="Azure">
             <h2>Azure</h2>
-          </div>
+          </div> -->
 
 
 
         <!-- Nubo -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/nubo.png" alt="Nubo">
             <h2>Nubo</h2>
-          </div>
+          </div> -->
 
 
 
         <!-- OVH -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/ovh.png" alt="Ovh">
             <h2>OVH</h2>
-          </div>
+          </div> -->
 
         <!-- Ionos -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/ionos.png" alt="Ionos">
           <h2>Ionos</h2>
-        </div>
+        </div> -->
 
         <!-- Hetzner -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/hetzner.png" alt="Hetzner">
           <h2>Hetzner</h2>
-        </div>
+        </div> -->
 
 
 
         <!-- Alibabacloud -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/alibabacloud.png" alt="Alibabacloud">
             <h2>Alibaba Cloud</h2>
-          </div>
+          </div> -->
 
 
 
         <!-- DigitalOcean -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/digitalocean.png" alt="Digitalocean">
             <h2>DigitalOcean</h2>
-          </div>
+          </div> -->
 
       
         <!-- Openstack -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/openstack.png" alt="Openstack">
             <h2>Openstack</h2>
-          </div>
+          </div> -->
 
 
         <!-- Virtualbox -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/virtualbox.png" alt="Virtualbox">
             <h2>Virtualbox</h2>
-          </div>
+          </div> -->
 
         <!-- Vmware -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/vmware.png" alt="Vmware">
             <h2>Vmware</h2>
-          </div>
+          </div> -->
 
         <!-- Terraform -->
-        <div class="service-item" onclick="toggleTools(this)">
-          <img src="logo/terrafrom.png" alt="Terraform">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
+          <img src="logo/terraform.png" alt="Terraform">
           <h2>Terraform</h2>
-        </div>
+        </div> -->
 
         
         <!-- Vagrant -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/vagrant.png" alt="Vagrant">
           <h2>Vagrant</h2>
-        </div>
+        </div> -->
 
           
 
         <!-- Ansible -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/ansible.png" alt="Ansible">
             <h2>Ansible</h2>
-          </div>
+          </div> -->
 
 
 
         <!-- Puppet -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/puppet.png" alt="Puppet">
             <h2>Puppet</h2>
-          </div>
+          </div> -->
 
 
 
         <!-- Chef -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
             <img src="logo/chef.png" alt="Chef">
             <h2>Chef</h2>
-          </div>
+          </div> -->
 
 
         <!-- Selenium -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/selenium.png" alt="Selenium">
           <h2>Selenium</h2>
-        </div>
+        </div> -->
 
         <!-- Sonarqube -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/sonarqube.png" alt="Sonarqube">
           <h2>Sonarqube</h2>
-        </div>
+        </div> -->
 
 
         <!-- Selenium -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/cypress.png" alt="Cypress">
           <h2>Cypress</h2>
-        </div>
+        </div> -->
 
 
         <!-- Java -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/java.png" alt="Java">
           <h2>Java</h2>
-        </div>
+        </div> -->
 
 
         <!-- Python -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/python.png" alt="Python">
           <h2>Python</h2>
-        </div>
+        </div> -->
 
         
         <!-- Go -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/go.png" alt="Go">
           <h2>Go</h2>
-        </div>
+        </div> -->
 
 
         <!-- Php -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/php.png" alt="Php">
           <h2>Php</h2>
-        </div>
+        </div> -->
 
 
         <!-- Git -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/git.png" alt="Git">
           <h2>Git</h2>
-        </div>
+        </div> -->
 
 
         <!-- Gitlab -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/gitlab.png" alt="Gitlab">
           <h2>Gitlab</h2>
-        </div>
+        </div> -->
 
 
         <!-- Gitlabci -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/gitlabci.png" alt="Gitlabci">
           <h2>Gitlab-CI</h2>
-        </div>
+        </div> -->
 
 
         <!-- Jenkins -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/jenkins.png" alt="Jenkins">
           <h2>Jenkins</h2>
-        </div>
+        </div> -->
 
         <!-- Bitbucket -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/bitbucket.png" alt="Bitbucket">
           <h2>Bitbucket</h2>
-        </div>
+        </div> -->
 
 
         <!-- Argocd -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/argocd.png" alt="Argocd">
           <h2>Argocd</h2>
-        </div>
+        </div> -->
 
         <!-- Circleci -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/circleci.png" alt="Circleci">
           <h2>Circleci</h2>
-        </div>
+        </div> -->
 
         <!-- Docker -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/docker.png" alt="Docker">
           <h2>Docker</h2>
-        </div>
+        </div> -->
 
         <!-- Docker Swarm -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/swarm.png" alt="Dockerswarm">
           <h2>Docker Swarm</h2>
-        </div>
+        </div> -->
 
 
         <!-- Podman -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/podman.png" alt="Podman">
           <h2>Podman</h2>
-        </div>
+        </div> -->
 
         <!-- Kubernetes -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/kubernetes.png" alt="kubernetes">
           <h2>kubernetes</h2>
-        </div>
+        </div> -->
 
         <!-- Openshift -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/openshift.png" alt="Openshift">
           <h2>Openshift</h2>
-        </div>
+        </div> -->
 
 
 
 
         <!-- Jira -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/jira.png" alt="Jira">
           <h2>Jira</h2>
-        </div>
+        </div> -->
 
         <!-- Confluence -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/confluence.png" alt="Confluence">
           <h2>Confluence</h2>
-        </div>
+        </div> -->
 
         <!-- Atlassian -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/atlassian.png" alt="Atlassian">
           <h2>Atlassian</h2>
-        </div>
+        </div> -->
 
         <!-- Grafana -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/grafana.png" alt="Grafana">
           <h2>Grafana</h2>
-        </div>
+        </div> -->
 
         <!-- Prometheus -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/prometheus.png" alt="Prometheus">
           <h2>Prometheus</h2>
-        </div>
+        </div> -->
 
         <!-- Loki -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/loki.png" alt="Loki">
           <h2>Loki</h2>
-        </div>
+        </div> -->
 
 
         <!-- ELK -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/elk.png" alt="Elk">
           <h2>ELK</h2>
-        </div>
+        </div> -->
 
         <!-- Nagios -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/nagios.png" alt="Nagios">
           <h2>Nagios</h2>
-        </div>
+        </div> -->
 
         <!-- Dynatrace -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/dynatrace.png" alt="Dynatrace">
           <h2>Dynatrace</h2>
-        </div>
+        </div> -->
 
         <!-- Owasp -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/owasp.png" alt="Owasp">
           <h2>Owasp</h2>
-        </div>
+        </div> -->
 
 
         <!-- Calico -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/calico.png" alt="Calico">
           <h2>Calico</h2>
-        </div>        
+        </div>         -->
 
         <!-- Snort -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/snort.png" alt="Snort">
           <h2>Snort</h2>
-        </div>
+        </div> -->
 
         <!-- Postgresql -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/postgresql.png" alt="Postgresql">
           <h2>Postgresql</h2>
         </div>
-                
+                 -->
 
         
         <!-- Mongodb -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/mongodb.png" alt="Mongodb">
           <h2>Mongodb</h2>
-        </div>                
+        </div>                 -->
 
         
         <!-- Mariadb -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/mariadb.png" alt="Mariadb">
           <h2>Mariadb</h2>
-        </div>                
+        </div>                 -->
 
                 
         <!-- Sql -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/sql.png" alt="Sql">
           <h2>Sql</h2>
-        </div>
+        </div> -->
                 
         <!-- Oracle -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/oracle.png" alt="Oracle">
           <h2>Oracle</h2>
-        </div>
+        </div> -->
 
         
         
         <!-- IA -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/ia.png" alt="IA">
           <h2>IA</h2>
-        </div>
+        </div> -->
 
         
         <!-- Big Data -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/bigdata.png" alt="Bigdata">
           <h2>BigData</h2>
-        </div>
+        </div> -->
 
         
         <!-- PowerBI -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/powerbi.png" alt="Powerbi">
           <h2>PowerBI</h2>
-        </div>
+        </div> -->
 
         <!-- ML -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/ml.png" alt="ML">
           <h2>ML</h2>
         </div>        
-                      
+                       -->
 
         <!-- SIRH -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/sirh.png" alt="Sirh">
           <h2>SIRH</h2>
-        </div>        
+        </div>         -->
  
         <!-- Agile -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/agile.png" alt="Agile">
           <h2>Agile</h2>
-        </div>          
+        </div>           -->
                 
         <!-- Scrum -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/scrum.png" alt="Scrum">
           <h2>Scrum</h2>
-        </div>          
+        </div>           -->
         
         <!-- Kanban -->
-        <div class="service-item" onclick="toggleTools(this)">
+        <!-- <div class="service-item" onclick="toggleTools(this)">
           <img src="logo/kanban.png" alt="Kanban">
           <h2>Kanban</h2>
-        </div>          
+        </div>           -->
                 
+
 
 
 
@@ -618,25 +645,460 @@
 
       else if (serviceName === 'DevOps') {
         toolsContent = `
+
+        <div class="service-item">
+          <img src="logo/atlassian.png" alt="Atlassian">
+          <p>Mise en place de plateforme <br>Jira, Confluence, JiraSm, <br> EazyBI interministérielle sur <br>cloud Nubo sur Openstack <br> à la DGFIP </p>
+        </div>
+
+
+          <div class="service-item">
+            <img src="logo/terraform.png" alt="Terraform">
+            <h2>Terraform</h2>
+          </div>
+
+
+          <div class="service-item">
+            <img src="logo/openstack.png" alt="Openstack">
+            <h2>Openstack</h2>
+          </div>
+        
+          <div class="service-item">
+            <img src="logo/ansible.png" alt="Ansible">
+            <h2>Ansible</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/barbican.png" alt="Barbican">
+            <h2>Barbican</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/vault.png" alt="Vault">
+            <h2>Vault</h2>
+          </div>
+          <div class="service-item">
+            <img src="logo/gitlab.png" alt="Gitlab">
+            <h2>Gitlab</h2>
+          </div>
+
           <div class="service-item">
             <img src="logo/jenkins.png" alt="Jenkins">
             <h2>Jenkins</h2>
           </div>
+
           <div class="service-item">
-            <img src="logo/kubernetes.png" alt="Kubernetes">
-            <h2>Kubernetes</h2>
+            <img src="logo/grafana.png" alt="Grafana">
+            <h2>Grafana</h2>
           </div>
+
           <div class="service-item">
-            <img src="logo/openshift.png" alt="OpenShift">
-            <h2>OpenShift</h2>
+            <img src="logo/prometheus.png" alt="Prometheus">
+            <h2>Prometheus</h2>
           </div>
+
+          <div class="service-item">
+            <img src="logo/loki.png" alt="Loki">
+            <h2>Loki</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/selenium.png" alt="Selenium">
+            <h2>Selenium</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/sonarqube.png" alt="Sonarqube">
+            <h2>SonarQube</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/nginx.png" alt="Nginx">
+            <h2>Nginx</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/haproxy.png" alt="HAproxy">
+            <h2>HAproxy</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/postgresql.png" alt="Postgresql">
+            <h2>Postgresql</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/jira.png" alt="Jira">
+            <h2>Jira</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/confluence.png" alt="Confluence">
+            <h2>Confluence</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/jirasm.png" alt="JiraSM">
+            <h2>JiraSM</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/eazybi.png" alt="Eazybi">
+            <h2>EazyBI</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/restic.png" alt="Restic">
+            <h2>Restic</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/swift.png" alt="Swift">
+            <h2>Swift</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/python.png" alt="Python">
+            <h2>Python</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/groovy.png" alt="Groovy">
+            <h2>Groovy</h2>
+          </div>
+        
+          <div class="service-item">
+            <img src="logo/shell.png" alt="Shell">
+            <h2>Shell</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/bash.png" alt="Bash">
+            <h2>Bash</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/docker.png" alt="Docker">
+            <h2>Docker</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/podman.png" alt="Podman">
+            <h2>Podman</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/linux.png" alt="Linux">
+            <h2>Linux</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/redhat.png" alt="Redhat">
+            <h2>Redhat</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/debian.png" alt="Debian">
+            <h2>Debian</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/windows.png" alt="Windows">
+            <h2>Windows</h2>
+          </div>          
+
 
         `;
       }
 
+      else if (serviceName === 'Cloud') {
+        toolsContent = `
+
+        <div class="service-item">
+          <img src="logo/linkinnov.png" alt="Linkinnov">
+          <p>LinkInnov: Projet gigantesque <br>Reseau social d'innovation <br>multicloud GCP, AWS, Azure, <br>Backoffice, applications mobile <br> ios et android en Java, spring <br>Angular, React, mongo ... </p>
+        </div>
+
+          <div class="service-item">
+            <img src="logo/gcp.png" alt="GCP">
+            <h2>GCP</h2>
+          </div>
+          <div class="service-item">
+            <img src="logo/aws.png" alt="AWS">
+            <h2>AWS</h2>
+          </div>
+          <div class="service-item">
+            <img src="logo/azure.png" alt="Azure">
+            <h2>Azure</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/docker.png" alt="Docker">
+            <h2>Docker</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/kubernetes.png" alt="Kubernetes">
+            <h2>Kubernetes</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/mongodb.png" alt="Mongodb">
+            <h2>Mongodb</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/postgresql.png" alt="Postgresql">
+            <h2>Postgresql</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/elasticsearch.png" alt="ElasticSearch">
+            <h2>ElasticSearch</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/java.png" alt="Java">
+            <h2>Java</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/angular.png" alt="Angular">
+            <h2>Angular</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/react.png" alt="React">
+            <h2>React</h2>
+          </div>
+
+
+          <div class="service-item">
+            <img src="logo/gke.png" alt="GKE">
+            <h2>GKE</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/amazons3.png" alt="AmazonS3">
+            <h2>Amazon S3</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/helm.png" alt="helm">
+            <h2>helm</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/nginx.png" alt="Nginx">
+            <h2>Nginx</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/letsencrypt.png" alt="Letsencrypt">
+            <h2>Letsencrypt</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/grafana.png" alt="Grfana">
+            <h2>Grafana</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/prometheus.png" alt="Prometheus">
+            <h2>Prometheus</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/elk.png" alt="ELK">
+            <h2>ELK</h2>
+          </div>
+
+
+          <!-- <div class="service-item">
+            <img src="logo/ovh.png" alt="OVH">
+            <h2>OVH</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/hetzner.png" alt="Hetzner">
+            <h2>Hetzner</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/ionos.png" alt="Ionos">
+            <h2>Ionos</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/alibabacloud.png" alt="Alibabacloud">
+            <h2>AlibabaCloud</h2>
+          </div> 
+
+          <div class="service-item">
+            <img src="logo/digitalocean.png" alt="Digitalocean">
+            <h2>DigitalOcean</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/oraclecloud.png" alt="Oraclecloud">
+            <h2>Oracle Cloud</h2>
+          </div>          
+
+          <div class="service-item">
+            <img src="logo/nubo.png" alt="Nubo">
+            <h2>Nubo</h2>
+          </div>  -->
+
+        `; 
+      }
+
+
+      else if (serviceName === 'Cybersecurity') {
+        toolsContent = `
+
+        <div class="service-item">
+          <img src="logo/ipsecure.png" alt="Ipsec">
+          <p>Projet IPsecure: Plateforme de filtrage <br>réseau, detection des attaques <br>pfsense, snort asterisk, <br>freepbx avec mise a jour <br>auto des regles sur Azure<br> </p>
+        </div>
+
+          <div class="service-item">
+            <img src="logo/owasp.png" alt="Owasp">
+            <h2>Owasp</h2>
+          </div>
+  
+          <div class="service-item">
+            <img src="logo/snort.png" alt="Snort">
+            <h2>Snort</h2>
+          </div>
+  
+          <div class="service-item">
+            <img src="logo/pfsense.png" alt="Pfsense">
+            <h2>Pfsense</h2>
+          </div>
+  
+          <div class="service-item">
+            <img src="logo/asterisk.png" alt="Asterisk">
+            <h2>Asterisk</h2>
+          </div>
+  
+          <div class="service-item">
+            <img src="logo/freepbx.png" alt="Freepbx">
+            <h2>Freepbx</h2>
+          </div>
+  
+          <div class="service-item">
+            <img src="logo/zap.png" alt="Zap">
+            <h2>Zap</h2>
+          </div>
+  
+          <div class="service-item">
+            <img src="logo/nginx.png" alt="Nginx">
+            <h2>Nginx</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/docker.png" alt="Docker">
+            <h2>Docker</h2>
+          </div>
+  
+          <div class="service-item">
+            <img src="logo/kubernetes.png" alt="Kubernetes">
+            <h2>Kubernetes</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/aks.png" alt="AKS">
+            <h2>AKS</h2>
+          </div>
+  
+          <div class="service-item">
+            <img src="logo/bash.png" alt="Bash">
+            <h2>Bash</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/powershell.png" alt="Powershell">
+            <h2>Powershell</h2>
+          </div>
+
+
+          <div class="service-item">
+            <img src="logo/linux.png" alt="Linux">
+            <h2>Linux</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/windows.png" alt="Windows">
+            <h2>Windows</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/python.png" alt="Python">
+            <h2>Python</h2>
+          </div>          
+
+          <div class="service-item">
+            <img src="logo/nagios.png" alt="Nagios">
+            <h2>Nagios</h2>
+          </div>
+
+
+        `; 
+      }
+
+
+      else if (serviceName === 'Data') {
+        toolsContent = `
+
+        <div class="service-item">
+          <img src="logo/recognise.png" alt="Recognise">
+          <p>Recognise: Projet BigData + IA de <br>detection de visages et de tout <br>objet non humain sur AWS <br>avec plein d'options<br>generation d'histogrammes<br>statisatiques , compte rendu, <br>filtrage, Recherche ... </p>
+        </div>
+
+          <div class="service-item">
+            <img src="logo/python.png" alt="Python">
+            <h2>Python</h2>
+          </div>
+ 
+          <div class="service-item">
+            <img src="logo/django.png" alt="Django">
+            <h2>Django</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/nginx.png" alt="Nginx">
+            <h2>Nginx</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/ec2.png" alt="EC2">
+            <h2>EC2</h2>
+          </div>          
+
+          <div class="service-item">
+            <img src="logo/eks.png" alt="EKS">
+            <h2>EKS</h2>
+          </div>
+  
+          <div class="service-item">
+            <img src="logo/docker.png" alt="Docker">
+            <h2>Docker</h2>
+          </div>
+
+          <div class="service-item">
+            <img src="logo/kubernetes.png" alt="Kubernetes">
+            <h2>Kubernetes</h2>
+          </div>
+        `; 
+      }
+
+
 
 
       // Autres configurations pour d'autres services
+
+
+
 
       toolsContent += `
       <div class="service-item" onclick="window.location.href = 'index.html';">
@@ -644,7 +1106,6 @@
         <h2>Retour</h2>
       </div>
     `;
-
 
       servicesContainer.innerHTML = toolsContent; // Affiche les outils
     }
